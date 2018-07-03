@@ -13,7 +13,7 @@ setup(
     install_requires=['packagea'],
 
     # *strongly* suggested for sharing
-    version='0.0.1',
+    version='0.0.2',
 
     license='private test code',
     description='any description',
