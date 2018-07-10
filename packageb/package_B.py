@@ -10,12 +10,10 @@ class PackageB(PackageA):
     def __init__(self):
         pass
 
-    # def get_version(self):
-    #     # require = lower(name) -> name='PackageB',
-    #     version = pkg_resources.require("packageb")[0].version
-    #     return version
-
     def print_version(self):
         super().print_version()
-        version = pkg_resources.require("packageb")[0].version
-        print('Package_B: {}'.format(version))
+        try:
+            version = pkg_resources.require("packageb")[0].version
+            print('Package_B: {}'.format(version))
+        except:
+            print('=== Package_B ===')
